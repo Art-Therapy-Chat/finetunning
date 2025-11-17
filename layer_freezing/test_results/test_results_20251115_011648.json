@@ -1,0 +1,166 @@
+{
+  "test_info": {
+    "model_path": "./qwen2.5-htp-layer-freeze-final",
+    "test_date": "2025-11-15 01:16:48",
+    "total_tests": 15,
+    "successful_tests": 15,
+    "success_rate": "100.0%"
+  },
+  "fixed_test_cases": [
+    {
+      "case_id": 1,
+      "category": "tree",
+      "input": "The tree is dominant and tall with many branches.",
+      "expected_theme": "자신감, 성장 의지, 리더십",
+      "model_output": "This suggests a potential need for control, assertiveness, or a desire to be perceived as strong and influential in their environment. The large size of the tree could indicate a need for power and dominance.",
+      "output_length": 208,
+      "status": "success"
+    },
+    {
+      "case_id": 2,
+      "category": "house",
+      "input": "A small house with no windows, located far from the center.",
+      "expected_theme": "내향성, 소통 회피, 고립감",
+      "model_output": "This suggests the individual may be experiencing feelings of isolation, detachment, or difficulty forming secure attachments. The lack of a window could represent a reluctance to engage with external relationships or a sense of being trapped by one's own defenses.",
+      "output_length": 264,
+      "status": "success"
+    },
+    {
+      "case_id": 3,
+      "category": "person",
+      "input": "The person is drawn very small and placed at the bottom corner.",
+      "expected_theme": "낮은 자존감, 소속감 부족",
+      "model_output": "This indicates a feeling of helplessness, powerlessness, and a lack of control within their environment. The diminutive size of the person compared to the house suggests a sense of being insignificant or overwhelmed by external forces.  Combined with the placement at the lower edge, it points to a desire for protection, a fear of falling into overwhelming circumstances, and potentially a feeling that they are unable to cope with challenges.",
+      "output_length": 444,
+      "status": "success"
+    },
+    {
+      "case_id": 4,
+      "category": "tree",
+      "input": "The tree has no leaves and broken branches.",
+      "expected_theme": "우울, 상실감, 트라우마",
+      "model_output": "The absence of foliage and the presence of fragmented branches strongly indicate a damaged or rejected sense of self.  This individual may be struggling with feelings of inadequacy, loss, or a lack of integration, potentially leading to feelings of helplessness and depression.",
+      "output_length": 277,
+      "status": "success"
+    },
+    {
+      "case_id": 5,
+      "category": "house",
+      "input": "A house with a large door and many windows.",
+      "expected_theme": "개방성, 사회성, 소통 욕구",
+      "model_output": "This configuration suggests a desire for openness and connection, potentially coupled with anxiety about external influences. The large door indicates a need for interaction but also a feeling of being observed or perceived.  The numerous windows may represent a yearning for connection but also feelings of vulnerability due to exposure.",
+      "output_length": 338,
+      "status": "success"
+    }
+  ],
+  "dataset_samples": [
+    {
+      "sample_id": 45,
+      "category": "person",
+      "input": "The person in the drawing has arms slightly overlapping.",
+      "ground_truth": "This finding, combined with the low scores on the neuroticism subscales (N1, N2, N3, N4), suggests a potential tendency towards interpersonal conflict, anxiety, and possibly difficulty regulating emotional responses. The significant p-value (p=0.036) associated with this finding strengthens the interpretation of a heightened reactivity and potential for challenging relationships.",
+      "prediction": "This indicates indecision, potential conflict, or a need for reassurance. It could also signify a desire to protect oneself from external threats, suggesting underlying anxieties about relationships or one's environment.",
+      "input_length": 56,
+      "output_length": 220,
+      "status": "success"
+    },
+    {
+      "sample_id": 97,
+      "category": "tree",
+      "input": "The tree is prominent and mature, reaching upwards.",
+      "ground_truth": "The large, upward-reaching tree symbolizes ambition, aspiration, and a desire for growth and achievement. This indicates a subject with high goals, a strong will, and a belief in their potential to reach new heights, potentially reflecting a desire for intellectual or professional advancement.",
+      "prediction": "The dominant, upward-reaching tree often symbolizes ambition, aspiration, and a desire for growth and achievement. However, it could also indicate a need to avoid being overwhelmed by external pressures or a fear of losing control. Further investigation would be needed to determine if this reflects the patient’s aspirations or anxieties.",
+      "input_length": 51,
+      "output_length": 339,
+      "status": "success"
+    },
+    {
+      "sample_id": 27,
+      "category": "tree",
+      "input": "The tree is drawn with a complex, interwoven structure.",
+      "ground_truth": "The complex tree structure suggests a tangled or convoluted emotional life, possibly indicating difficulty in establishing clear boundaries, a sense of being overwhelmed, or a struggle with relationships. It could also point to a feeling of being rooted in the past or trapped in a specific situation.",
+      "prediction": "This indicates a potentially elevated capacity for strategic thinking, flexible thought processes, or possibly a tendency towards over-analysis. It could also suggest a need for further investigation into the subject's ability to maintain focus and manage multiple tasks simultaneously, due to the detailed and nuanced representation of the tree’s branches.",
+      "input_length": 55,
+      "output_length": 357,
+      "status": "success"
+    },
+    {
+      "sample_id": 19,
+      "category": "tree",
+      "input": "A solitary figure stands before a tree.",
+      "ground_truth": "The isolated figure and the prominent tree could signify a yearning for independence and self-sufficiency. The tree, often representing growth and connection to nature, may indicate a desire for spiritual or personal development. The drawing might reveal underlying feelings of loneliness or a need for grounding and connection to something larger than oneself.",
+      "prediction": "The isolated individual combined with the prominent tree may indicate feelings of loneliness, vulnerability, or a need for grounding. The tree, often associated with stability and connection to nature, could represent a desire for emotional stability, while the solitary figure might reflect feelings of isolation or a struggle with interpersonal relationships. The overall image could point to unresolved issues related to self-reflection and social acceptance, potentially highlighting a need to be perceived as assertive and confident despite his own perceived weaknesses.",
+      "input_length": 39,
+      "output_length": 575,
+      "status": "success"
+    },
+    {
+      "sample_id": 42,
+      "category": "tree",
+      "input": "A single, withered tree is present.",
+      "ground_truth": "The presence of a decaying tree often signifies feelings of sadness, loss, or a sense of stagnation. It can also reflect a lack of growth or support in the child's emotional life, potentially indicating difficulties coping with challenges.",
+      "prediction": "The solitary, lifeless tree could indicate feelings of isolation, loneliness, or a lack of support in the subject's life. It may also signify a struggle with self-reliance and a need for external validation.",
+      "input_length": 35,
+      "output_length": 207,
+      "status": "success"
+    },
+    {
+      "sample_id": 120,
+      "category": "tree",
+      "input": "A single, isolated tree is present.",
+      "ground_truth": "The solitary tree could symbolize loneliness, isolation, and a lack of support in the subject's life. It may indicate feelings of detachment from others and a struggle to form meaningful connections, possibly stemming from unresolved issues of hostility or distrust.",
+      "prediction": "The solitary tree could represent feelings of isolation, loneliness, or a lack of social support. It may also symbolize a need for connection or a desire to escape current relationships.",
+      "input_length": 35,
+      "output_length": 186,
+      "status": "success"
+    },
+    {
+      "sample_id": 29,
+      "category": "person",
+      "input": "The person is depicted with a pointing finger.",
+      "ground_truth": "The pointing finger often represents a focus on external issues, a need for direction, or a tendency to draw attention to oneself. It could also suggest a confrontational or assertive personality style.",
+      "prediction": "The drawing suggests a desire for control, a need to communicate, and potentially a feeling of being overwhelmed by external influences. The individual may be experiencing anxiety or difficulty managing emotions, leading to a need external validation.",
+      "input_length": 46,
+      "output_length": 251,
+      "status": "success"
+    },
+    {
+      "sample_id": 80,
+      "category": "tree",
+      "input": "A large tree dominates the drawing.",
+      "ground_truth": "This suggests a strong need for stability, security, and possibly a desire to feel rooted and grounded. The individual may be experiencing feelings of insecurity or a need for a strong foundation in their life.",
+      "prediction": "The prominent tree could indicate a need for stability or a desire for growth within the individual's life, potentially reflecting underlying anxieties or aspirations related to control and security.",
+      "input_length": 35,
+      "output_length": 199,
+      "status": "success"
+    },
+    {
+      "sample_id": 66,
+      "category": "house",
+      "input": "The house has a complex roof structure with multiple levels.",
+      "ground_truth": "This indicates a complex thought process, possibly involving multiple perspectives or layers of understanding. It may also signify a desire for intricate planning or a tendency towards overthinking.  The subject could be experiencing cognitive disorganization or a need for simplification.",
+      "prediction": "The complex roof design may signify a highly active and imaginative mind, struggling to organize thoughts or potentially experiencing overwhelming complexity in their life situation. It could also represent a need for multiple perspectives or a multifaceted approach to problem-solving.",
+      "input_length": 60,
+      "output_length": 286,
+      "status": "success"
+    },
+    {
+      "sample_id": 18,
+      "category": "person",
+      "input": "The person is positioned centrally.",
+      "ground_truth": "This suggests a potential underlying need for security and stability, as a strong tendency towards exact centering is typically associated with a feeling of rigidity and a desire for control within the subject's psychological landscape.",
+      "prediction": "This suggests a desire for control and focus within the family system. The individual’s placement at the core of the drawing indicates a need to be at the leading edge of their relationships. It could also point to a need for self-assurance and a forward-looking perspective.",
+      "input_length": 35,
+      "output_length": 275,
+      "status": "success"
+    }
+  ],
+  "statistics": {
+    "avg_output_length": 295.06666666666666,
+    "category_breakdown": {
+      "tree": 8,
+      "house": 3,
+      "person": 4
+    }
+  }
+}
