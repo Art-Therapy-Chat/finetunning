@@ -1,0 +1,55 @@
+{
+  "test_나무.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_나무.JPG",
+    "category": "TREE",
+    "caption": "1. The crown of the tree is sparse, with a few visible branches extending outward in different directions.\n2. The trunk of the tree is relatively thin and straight, with no visible markings or textures on its surface.\n3. There are several distinct areas where branches are visible, but they are not clearly defined as to their number or thickness.\n4. The roots of the tree are not drawn in the image.\n5. The drawing technique used for this tree is simple and appears to be done with a light line weight, with no shading or additional textures present.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image"
+      ],
+      "verification_response": " The description accurately matches the image, but it does not mention that there are no visible roots in the drawing. Therefore, the answer to question 4 should be \"no\" for both the description and the actual image. "
+    }
+  },
+  "test_남자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_남자사람.JPG",
+    "category": "PERSON",
+    "caption": "1. The figure appears to have a medium height relative to head size, standing upright with a neutral posture. The overall proportions of the figure are not clearly defined due to the lack of context and perspective.\n2. The head is proportioned in relation to the body, but facial features such as eyes, nose, and mouth are not visible in this image.\n3. The arms are positioned down by the sides with no fingers or hand details visible.\n4. The legs are also down by the sides, but no feet details or shoes are drawn.\n5. The figure is wearing a garment that covers the torso, and there is no indication of hair or accessories in this image. The line quality appears to be light, with minimal shading or detailing.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image"
+      ],
+      "verification_response": " 1. No\n2. Yes\n3. No\n4. No\n5. No\n6. No "
+    }
+  },
+  "test_여자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_여자사람.JPG",
+    "category": "PERSON",
+    "caption": "1. The figure appears to have a medium height relative to head size, standing upright with a straight posture. The overall proportions of the body structure are not clearly defined in this image.\n2. The head and face of the figure are visible but lack detail. It is difficult to determine if eyes, nose, or mouth are present due to the simplicity of the drawing.\n3. Arms are present, with both hands positioned close to the body. Fingers are not clearly visible or countable in this image.\n4. The legs and feet of the figure are also visible but lack detail. It is unclear if shoes are drawn on the figure's feet.\n5. The clothing depicted is a simple, solid-colored garment that covers the entire body, making it difficult to discern any specific style or accessories. Hair is not visible in this image. The line quality of the drawing is light, with no heavy shading or details.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image"
+      ],
+      "verification_response": " 1. No\n2. Yes\n3. No\n4. No\n5. Yes\n6. No "
+    }
+  },
+  "test_집.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_집.JPG",
+    "category": "HOUSE",
+    "caption": "1. The house is a simple, small structure with a flat roof.\n2. The roof has no visible chimney or angle.\n3. There are two windows on the front of the house, both of which appear to be rectangular in shape. The window on the left is larger than the one on the right.\n4. A door is present on the front of the house, located between the two windows. It appears to be a simple, flat door with no visible handle or steps leading up to it.\n5. There are no additional elements such as fences, paths, smoke, or shading in this drawing. The line quality is light, and there is no visible texture or detail on the walls of the house.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "MEDIUM",
+      "issues": [
+        "Description may not match the actual image",
+        "Description partially matches the image"
+      ],
+      "verification_response": " 1. 2\n2. Yes\n3. Yes\n4. No\n5. Yes\n6. Partially "
+    }
+  }
+}

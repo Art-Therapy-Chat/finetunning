@@ -1,0 +1,100 @@
+{
+  "test_나무.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_나무.JPG",
+    "category": "TREE",
+    "caption": "1. The tree has a sparse and narrow crown with no distinct branches or twigs.\n2. The trunk of the tree is straight and smooth, with no visible markings or shading.\n3. The roots of the tree are not visible in the image.\n4. The drawing technique used is simple, with light line weight and no additional textures or shading.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image",
+        "Verification detected: not visible"
+      ],
+      "verification_response": " The image shows a tree drawing with a sparse crown and no distinct branches or twigs, which matches the description provided. However, there are no visible roots in the image, so the description is not entirely accurate as it mentions that the roots of the tree are not visible. Additionally, the trunk of the tree appears to be straight and smooth without any shading or markings, which deviates from the description's mention of a \"narrow crown with no distinct branches or twigs.\" ",
+      "retry_count": 1,
+      "all_attempts": [
+        {
+          "attempt": 1,
+          "caption": "1. The tree has a visible crown, which appears to be sparse and narrow in shape.\n2. The trunk of the tree is smooth and straight with no visible markings or shading.\n3. There are several distinct areas where branches can be observed, but it's unclear if they are main branches or twigs due to the image's resolution.\n4. The roots of the tree are not visible in the image.\n5. The drawing technique used is simple and appears to use light line weight with no shading or additional textures."
+        },
+        {
+          "attempt": 2,
+          "caption": "1. The tree has a sparse and narrow crown with no distinct branches or twigs.\n2. The trunk of the tree is straight and smooth, with no visible markings or shading.\n3. The roots of the tree are not visible in the image.\n4. The drawing technique used is simple, with light line weight and no additional textures or shading."
+        }
+      ]
+    }
+  },
+  "test_남자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_남자사람.JPG",
+    "category": "PERSON",
+    "caption": "1. The person appears to be standing upright with a medium height relative to their head size.\n2. The head of the figure is proportionate to the body, and it has no facial features clearly visible.\n3. Both arms are present, but the hands are not detailed enough to count fingers or describe any specific hand details.\n4. The legs are visible, but the feet are not drawn in detail. There are no shoes depicted.\n5. The figure is wearing a light-colored top and dark pants. The line quality of the drawing is medium, with some shading indicating depth and form.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image"
+      ],
+      "verification_response": " 1. No\n2. Yes\n3. No\n4. No\n5. No\n6. No ",
+      "retry_count": 1,
+      "all_attempts": [
+        {
+          "attempt": 1,
+          "caption": "1. The figure is standing upright, with a medium height relative to its head size. The posture appears neutral and relaxed.\n2. The head of the figure is proportionate to the body, with no facial features clearly visible.\n3. Both arms are present, but the hands are not detailed enough to count fingers or describe any specific hand details.\n4. The legs are visible, but the feet are not drawn in detail. There are no shoes depicted.\n5. The figure is wearing a light-colored top and dark pants. The line quality of the drawing is medium, with some shading indicating depth and form."
+        },
+        {
+          "attempt": 2,
+          "caption": "1. The person appears to be standing upright with a medium height relative to their head size.\n2. The head of the figure is proportionate to the body, and it has no facial features clearly visible.\n3. Both arms are present, but the hands are not detailed enough to count fingers or describe any specific hand details.\n4. The legs are visible, but the feet are not drawn in detail. There are no shoes depicted.\n5. The figure is wearing a light-colored top and dark pants. The line quality of the drawing is medium, with some shading indicating depth and form."
+        }
+      ]
+    }
+  },
+  "test_여자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_여자사람.JPG",
+    "category": "PERSON",
+    "caption": "1. The person is standing upright with a clear posture.\n2. The head of the person is proportionate to their body, and facial features such as eyes, nose, and mouth are visible.\n3. Both arms are down by the sides, with fingers clearly visible on both hands.\n4. The legs are also visible, but the feet details and shoes are not drawn.\n5. The figure is wearing a long-sleeved shirt and pants, which appear to be a solid color. The line quality of the drawing is consistent throughout.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image",
+        "Verification detected: not visible"
+      ],
+      "verification_response": " 1. Yes, facial features are clearly drawn.\n2. Yes, the description's facial feature details match what I see.\n3. Yes, I can count fingers on the hands. There are five fingers visible on each hand.\n4. Yes, the description accurately mentions finger count.\n5. No, feet/shoes are not visible and detailed in the drawing.\n6. Yes, the description accurately matches what I see. ",
+      "retry_count": 1,
+      "all_attempts": [
+        {
+          "attempt": 1,
+          "caption": "1. The figure is standing upright, but the posture is not entirely clear due to the angle and perspective of the drawing. The overall proportions appear to be medium in size relative to the head.\n2. The head is proportionate to the body, but facial features such as eyes, nose, and mouth are not clearly visible.\n3. The arms are positioned down by the sides, with fingers visible on both hands. However, the number of fingers cannot be determined from this angle.\n4. The legs are also visible, but the feet details and shoes are not drawn.\n5. The figure is wearing a long-sleeved shirt and pants, which appear to be a solid color. The line quality of the drawing is light, with some areas appearing heavier than others."
+        },
+        {
+          "attempt": 2,
+          "caption": "1. The person is standing upright with a clear posture.\n2. The head of the person is proportionate to their body, and facial features such as eyes, nose, and mouth are visible.\n3. Both arms are down by the sides, with fingers clearly visible on both hands.\n4. The legs are also visible, but the feet details and shoes are not drawn.\n5. The figure is wearing a long-sleeved shirt and pants, which appear to be a solid color. The line quality of the drawing is consistent throughout."
+        }
+      ]
+    }
+  },
+  "test_집.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_집.JPG",
+    "category": "HOUSE",
+    "caption": "1. The house has a flat roof with no visible chimney or peaked angles.\n2. There is one window on the right side of the house, which appears to be rectangular in shape.\n3. A door is present on the front of the house, but there are no details such as a handle or steps/path leading to it.\n4. The drawing does not show any additional elements or technique that would indicate a specific style or type of roofing.\n5. The line quality of the drawing is light, and there is minimal shading.",
+    "validation": {
+      "is_valid": false,
+      "confidence": "LOW",
+      "issues": [
+        "Description may not match the actual image"
+      ],
+      "verification_response": " 1. 1\n2. Yes\n3. Yes\n4. No\n5. Yes\n6. No ",
+      "retry_count": 1,
+      "all_attempts": [
+        {
+          "attempt": 1,
+          "caption": "1. The house is a simple, small structure with a flat roof. It appears to have a single window on one side and a door on the front. There is no visible chimney or other additional elements such as fences or paths.\n2. The roof of the house is flat, with no visible peaked angles or chimney.\n3. There is only one window visible in the image, located on the right side of the house. It is a small rectangular window with no frames or curtains.\n4. A door is present on the front of the house, but there are no details such as a handle or steps/path visible in the drawing.\n5. The line quality of the drawing is light, and there is minimal shading. There are no additional elements or technique visible in the image."
+        },
+        {
+          "attempt": 2,
+          "caption": "1. The house has a flat roof with no visible chimney or peaked angles.\n2. There is one window on the right side of the house, which appears to be rectangular in shape.\n3. A door is present on the front of the house, but there are no details such as a handle or steps/path leading to it.\n4. The drawing does not show any additional elements or technique that would indicate a specific style or type of roofing.\n5. The line quality of the drawing is light, and there is minimal shading."
+        }
+      ]
+    }
+  }
+}

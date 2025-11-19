@@ -1,0 +1,22 @@
+{
+  "test_나무.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_나무.JPG",
+    "category": "TREE",
+    "caption": "CATEGORY: TREE\n1. The tree is large with many branches.\n2. The lines are deeply drawn, especially in the roots.\n3. The tree is centrally placed with a clear sky background.\n4. The detail level is moderate, with flowers and leaves.\n5. The overall impression is serene and natural."
+  },
+  "test_남자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_남자사람.JPG",
+    "category": "PERSON",
+    "caption": "CATEGORY: PERSON\n1. The drawing is small in size, focusing on a single figure.\n2. The lines are simple and unshaded, indicating a basic outline.\n3. The figure is centrally placed, with no additional background elements.\n4. There is minimal detail, with no facial features or clothing textures.\n5. The overall impression is minimalistic and abstract."
+  },
+  "test_여자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_여자사람.JPG",
+    "category": "PERSON",
+    "caption": "CATEGORY: PERSON\n1. The figure is small in size, suggesting it is a child or a toy.\n2. The lines are simple and unrefined, indicating a child's drawing.\n3. The figure is centered in the image, with arms and legs spread out.\n4. There is minimal detail, with no facial features or clothing details.\n5. The overall impression is playful and innocent, evoking a sense of childhood."
+  },
+  "test_집.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_집.JPG",
+    "category": "HOUSE",
+    "caption": "CATEGORY: HOUSE\n1. The drawing is small in size, depicting a simple structure.\n2. The lines are thin and simple, lacking depth or shading.\n3. The house is centrally placed on the page with a clear roof and door.\n4. The drawing is minimalistic with few details, focusing on the basic shape.\n5. The overall impression is of a basic, childlike representation of a house."
+  }
+}

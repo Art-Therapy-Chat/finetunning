@@ -1,0 +1,22 @@
+{
+  "test_나무.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_나무.JPG",
+    "category": "TREE",
+    "caption": "1. The tree has a sparse crown, with visible branches extending outward in various directions.\n2. The trunk is smooth and straight, with no distinct markings or shading.\n3. There are several main branches visible on the tree, each branching off from the trunk at different angles.\n4. The roots of the tree are not visible in the image.\n5. The drawing technique used for this tree appears to be a simple line drawing with no shading or texture detail."
+  },
+  "test_남자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_남자사람.JPG",
+    "category": "PERSON",
+    "caption": "1. The figure is standing upright, but the posture appears to be somewhat awkward or unnatural due to the proportions and angles of the limbs. It's difficult to determine the overall height relative to the head size as there are no clear reference points for scale.\n2. The head is disproportionately large compared to the body, which makes it challenging to accurately assess facial features. However, we can see that the figure has a simple representation of eyes and a nose, but the mouth is not visible.\n3. Both arms are present, but they are positioned in an unusual manner with the hands facing downwards and away from the body. The fingers are not clearly distinguishable due to their small size in relation to the head.\n4. The figure's legs are also disproportionately long compared to the body, which contributes to the unnatural posture. Feet details are not visible, and no shoes are drawn.\n5. The clothing is minimalistic, with a simple representation of what appears to be a shirt or top. There is no indication of any accessories or hairstyles, and the line quality is quite light, which makes it difficult to discern any additional details."
+  },
+  "test_여자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_여자사람.JPG",
+    "category": "PERSON",
+    "caption": "1. The figure appears to be a child with a medium height relative to head size. The posture is standing, and the overall proportions are somewhat distorted, with the head being disproportionately large compared to the body.\n2. The head of the figure is large in comparison to the body, and facial features such as eyes, nose, and mouth are visible. However, the details of these features are not clearly drawn.\n3. The arms of the figure are positioned at the sides, with the hands appearing to be in a relaxed position. The length of the arms is proportional to the body, but the fingers are not clearly distinguishable.\n4. The legs of the figure are visible and appear to be of average length. Feet details are not clearly drawn, and no shoes are depicted.\n5. The figure is wearing a long-sleeved shirt and pants. The clothing style seems casual, with no visible accessories or distinctive patterns. The line quality of the drawing is light, with some areas appearing to be more heavily outlined than others."
+  },
+  "test_집.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_집.JPG",
+    "category": "HOUSE",
+    "caption": "1. The house is a simple, small structure with a flat roof.\n2. The roof appears to be made of tiles or shingles and has no visible chimney.\n3. There are two windows on the front of the house; they are rectangular in shape and appear to have no curtains or frames.\n4. A door is present on the front of the house, located towards the right side. The door is small and does not have a visible handle or any other details.\n5. There are no additional elements such as a fence, path, or smoke in the image. The line quality of the drawing is light, with minimal shading."
+  }
+}

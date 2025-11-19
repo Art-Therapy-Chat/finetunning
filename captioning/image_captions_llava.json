@@ -1,0 +1,22 @@
+{
+  "test_나무.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_나무.JPG",
+    "category": "TREE",
+    "caption": "The tree in the illustration is quite tall with a long trunk that appears to be thick and sturdy. Its branches are densely packed, creating a full canopy over the visible part of the tree. There are numerous small fruits scattered throughout the branches, suggesting it might be a fruit tree. The roots of the tree extend deep into the ground, indicating a strong foundation. The line quality in the drawing is quite loose and somewhat childlike, with varying levels of detail and shading used to convey the form of the tree."
+  },
+  "test_남자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_남자사람.JPG",
+    "category": "PERSON",
+    "caption": "- The drawing shows a figure standing with its arms at its sides and legs apart in a neutral stance.\n- The head of the drawn figure is small compared to the rest of the body, giving it a cartoon-like appearance.\n- Facial details are minimalistic, with no visible eyes or other facial features.\n- The body appears simple with no additional clothing or accessories beyond the basic human form.\n- The figure lacks hair and detailed hand or foot features."
+  },
+  "test_여자사람.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_여자사람.JPG",
+    "category": "PERSON",
+    "caption": "- The person is drawn with a large head and detailed facial features, including eyebrows and eyes that convey a sense of curiosity or concern.\n- The arms are long and positioned close to the body, suggesting a relaxed posture or possibly anticipation of movement.\n- The legs are straight and positioned close together, implying a stance of readiness or stillness.\n- The figure has clearly defined fingers and hand details, suggesting a level of attention to detail in clothing or body details.\n- The feet are flat on the ground with no visible toes, giving a sense of stability or immobility in this position."
+  },
+  "test_집.JPG": {
+    "path": "C:\\Users\\helen\\Desktop\\kt cloud tech up\\basic_project\\test\\test_집.JPG",
+    "category": "HOUSE",
+    "caption": "The house drawing is a simple line drawing, featuring a small house with a sloping roof and a visible chimney. It has two windows located on opposite sides of the front wall, giving it a symmetrical appearance. There's a door situated in the middle of the front facade, providing access to the interior. No additional elements like a path or fence are visible in this image. The drawing style is minimalistic and does not provide detailed information about the surrounding area or any other structures."
+  }
+}
