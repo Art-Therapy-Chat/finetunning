@@ -1,0 +1,71 @@
+[
+  {
+    "user_query": "손이 크고, 눈썹이 진한 사람 그림",
+    "rewritten_queries": [
+      "generate portrait with large hands and dark eyebrows"
+    ],
+    "retrieved_docs": [
+      {
+        "content": "■ 극단적으로 큰 손을 그린다 자신의 무언가가 옳지 않다, 또는 자신이 모자라다는 느낌을 갖는다 충동적으로 행동한다",
+        "metadata": {
+          "category": "사람",
+          "chunk_index": "26-17",
+          "query": "generate portrait with large hands and dark eyebrows"
+        }
+      }
+    ],
+    "final_answer": "The presence of an unusually large hand and dark eyebrows suggests a heightened sense of self-awareness and possibly a tendency towards impulsivity or a need for control. This could indicate a person who is highly attuned to their own feelings and experiences, potentially leading to anxiety or difficulty with regulation. The specific characteristics should be further explored within the context of the full HTP assessment to determine if this pattern aligns with any particular psychological profile or condition."
+  },
+  {
+    "user_query": "손가락을 자세히 나타냈어",
+    "rewritten_queries": [
+      "Generate portrait with large hands and dark eyebrows",
+      "Retrieved document details"
+    ],
+    "retrieved_docs": [
+      {
+        "content": "■ 극단적으로 큰 손을 그린다 자신의 무언가가 옳지 않다, 또는 자신이 모자라다는 느낌을 갖는다 충동적으로 행동한다",
+        "metadata": {
+          "category": "사람",
+          "chunk_index": "26-17",
+          "query": "Generate portrait with large hands and dark eyebrows"
+        }
+      },
+      {
+        "content": "■ 2차원으로 꼼꼼하고 촘촘하게 묘사된 잎을 그린다 반복적으로 행동 또는 생각을 반복하며 완벽을 추구하는 경향이 있다.",
+        "metadata": {
+          "chunk_index": "17-7",
+          "category": "사람",
+          "query": "Retrieved document details"
+        }
+      }
+    ],
+    "final_answer": "Based on the detailed description of the hand drawn by the user, it appears to indicate an overemphasis on detail and perfectionism. The meticulous depiction of the tree and leaf suggests a tendency towards excessive analysis and possibly anxiety about achieving ideal outcomes. This could be indicative of obsessive-compulsive tendencies or a need for order and control within their environment. Further investigation would be needed to determine if this reflects a genuine personality trait or simply a preference for structured thinking."
+  },
+  {
+    "user_query": "창문이 크게 있어",
+    "rewritten_queries": [
+      "Generate portrait with large windows",
+      "Retrieve document related to large windows"
+    ],
+    "retrieved_docs": [
+      {
+        "content": "■ 창문을 강조하며 그린다 인간관계에 대한 과한 걱정이 존재한다",
+        "metadata": {
+          "category": "집",
+          "chunk_index": "6-8",
+          "query": "Generate portrait with large windows"
+        }
+      },
+      {
+        "content": "■ 집의 크기에 비해 매우 큰 문을 그린다 타인에게 극도로 의존하고 싶은 마음이 존재한다 삶의 판단과 책임을 다른 사람에게 맡겨버리고 싶다는 표현일 수 있다 남들에게 인상적인 모습을 남기고, 멋있는 사람인 것처럼 표현하는 시도일 수 있다",
+        "metadata": {
+          "chunk_index": "5-5",
+          "category": "집",
+          "query": "Retrieve document related to large windows"
+        }
+      }
+    ],
+    "final_answer": "The large window depicted in the HTP test suggests an overemphasis on external relationships and social interactions, potentially indicating a need for validation from others or a fear of isolation. This could be indicative of low self-esteem or difficulty forming genuine connections due to a tendency to rely heavily on external validation rather than developing a strong sense of self-worth and autonomy. The document references suggest this may reflect a desire to appear impressive or secure within the eyes of others, possibly stemming from underlying insecurities."
+  }
+]
