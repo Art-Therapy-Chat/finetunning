@@ -80,26 +80,73 @@ HTP 그림을 텍스트로 변환하는 3가지 모델 비교:
        visible at the base."
 ```
 
-### 2. 🧠 심리학적 해석 (두 가지 방법)
+### 2. 🧠 심리학적 해석 (파인튜닝)
 
-#### A. LoRA 파인튜닝
+#### 🎯 파인튜닝의 필요성
+
+**베이스 모델의 문제점**:
+- ❌ HTP 검사의 정의를 나열하는 등 불필요한 서술로 출력이 길어짐
+- ❌ 실제 해석보다는 이론적 설명에 치우침
+- ❌ 출력 형식이 일정하지 않아 서비스 적용이 어려움
+
+**파인튜닝 목표**:
+- ✅ 통일성 있고 깔끔한 해석 출력
+- ✅ 최신 HTP 데이터 기반 학습 (1,453개 샘플)
+- ✅ 서비스 가능한 일관된 포맷
+
+#### 🔬 두 가지 파인튜닝 방식
+
+##### A. LoRA (Low-Rank Adaptation)
 - **베이스 모델**: Qwen/Qwen2.5-1.5B-Instruct
-- **방법**: 어댑터 기반 경량 학습
-- **장점**: 빠른 학습, 적은 메모리 (8GB GPU 가능)
+- **핵심 원리**: 모델 전반의 레이어에 어댑터를 추가하여 효율적으로 파라미터 업데이트
+- **비유**: 특징 추출부터 판단까지 **전 과정에 걸쳐 조금씩 변화**를 주는 방식
+- **장점**: 
+  - 빠른 학습, 적은 메모리 (8GB GPU 가능)
+  - 모델 전체에 영향을 주어 섬세한 조정 가능
 - **파라미터**: LoRA rank=8, alpha=32
+- **학습 파라미터**: 0.79M (전체의 0.05%)
 
-#### B. Layer Freezing 파인튜닝 ⭐ **추천**
+##### B. Layer Freezing ⭐ **최종 선택**
 - **베이스 모델**: Qwen/Qwen2.5-1.5B-Instruct
-- **방법**: 26/28 레이어 동결, 상위 2개 레이어만 학습
-- **장점**: 더 나은 성능, 과적합 방지
+- **핵심 원리**: 앞단 레이어(26개)는 고정, 마지막 레이어(2개)만 업데이트
+- **비유**: 특징 추출 기준은 유지하되, **최종 판단 기준만 변경**하는 방식
+- **장점**: 
+  - 베이스 모델의 기존 지식 보존 (Catastrophic Forgetting 방지)
+  - 과적합 방지
+  - 더 안정적인 출력
 - **성능**: Training Loss 0.280 (67% 개선)
+- **학습 파라미터**: ~150M (전체의 7-10%)
 
-**예시 출력**:
+#### 📊 최종 모델 선정 기준: **베이스 모델과의 유사도**
+
+HTP 검사는 역사가 깊은 검사법으로, 베이스 모델이 사전 학습 과정에서 이미 충분한 배경지식을 보유하고 있습니다. 따라서:
+
+**선정 철학**:
+> 모델이 가진 기존 지식을 왜곡하지 않으면서,  
+> 원하는 형식으로 다듬는 것이 목표
+
+**평가 방법**:
+- **코사인 유사도(Cosine Similarity)** 측정
+- 파인튜닝 전 모델(베이스)과 파인튜닝 후 모델의 출력 비교
+- **유사도가 높을수록** = 기존 지식을 잘 보존 = 더 신뢰할 수 있는 모델
+
+**결과**: Layer Freezing이 베이스 모델의 지식을 더 잘 보존하면서도 안정적이고 정제된 해석을 출력하여 최종 선택
+
+**출력 비교 예시**:
 ```
 입력: "The tree is dominant and tall"
-AI 해석: "This suggests a strong, assertive personality with a 
-          desire for control and leadership. The individual might 
-          be perceived as confident and possibly even domineering..."
+
+[베이스 모델 - 문제점]
+"The HTP test is a projective psychological assessment tool...
+[불필요한 정의 나열]
+In general, trees represent growth and development...
+[이론적 설명만 나열, 형식 불안정]"
+
+[파인튜닝 모델 - 개선됨 ✨]
+"This suggests a strong, assertive personality with a desire 
+for control and leadership. The individual might be perceived 
+as confident and possibly even domineering..."
+[간결하고 직접적인 해석, 일관된 형식]
 ```
 
 ### 3. 💬 대화형 RAG 시스템
@@ -127,28 +174,49 @@ AI: 처진 가지는 우울감이나 에너지 저하를 시사할 수 있습니
 
 | 항목 | LoRA | Layer Freezing ⭐ |
 |------|------|------------------|
-| 학습 파라미터 | 0.79M (0.05%) | ~150M (7-10%) |
-| 학습 시간 | ~30분 | ~39분 |
-| 최종 Loss | ~0.35 | **0.280** |
-| GPU 메모리 | 6GB | 7GB |
-| 추론 속도 | 빠름 | 빠름 |
-| 품질 | 좋음 | **매우 좋음** |
+| **핵심 원리** | 전체 레이어에 어댑터 추가 | 앞단 동결, 마지막만 학습 |
+| **비유** | 전 과정 조금씩 변화 | 판단 기준만 변경 |
+| **학습 파라미터** | 0.79M (0.05%) | ~150M (7-10%) |
+| **학습 시간** | ~30분 | ~39분 |
+| **최종 Loss** | ~0.35 | **0.280** |
+| **GPU 메모리** | 6GB | 7GB |
+| **베이스 모델 유사도** | 낮음 | **높음 (지식 보존)** |
+| **출력 안정성** | 좋음 | **매우 좋음** |
+| **Catastrophic Forgetting** | 발생 가능성 있음 | **방지됨** |
 
 ### 베이스 모델 vs 파인튜닝 비교
 
-```csv
+#### 실제 출력 비교
+
+```
 Input: "The tree is large with many branches"
 
-Base Model: 
-"The tree symbolizes growth and vitality. [일반적이고 짧은 답변]"
+❌ Base Model (파인튜닝 전):
+"The House-Tree-Person (HTP) test is a projective psychological 
+assessment tool that uses drawings to gain insights into an 
+individual's personality, emotions, and psychological state.
 
-Fine-tuned Model:
+In the context of HTP analysis, a large tree with many branches 
+can be interpreted in several ways:
+
+1. Growth and Development: Trees are often seen as symbols of 
+growth, development, and maturity...
+[불필요한 정의와 이론 나열, 출력이 과도하게 김, 형식 불안정]"
+
+✅ Fine-tuned Model (파인튜닝 후):
 "This suggests a strong, assertive personality with a desire for 
 control and leadership. The extensive branching indicates a complex 
 personality with multiple interests and a tendency to spread oneself 
 across various activities. The individual might be perceived as 
-confident and possibly even domineering..." [전문적이고 상세한 답변]
+confident and possibly even domineering..."
+[간결하고 직접적인 해석, 일관된 형식, 서비스 적용 가능]
 ```
+
+**개선 포인트**:
+- ✅ 불필요한 정의 제거
+- ✅ 핵심 해석에 집중
+- ✅ 통일된 출력 형식
+- ✅ 적절한 길이 유지
 
 ---
 
@@ -298,12 +366,25 @@ others or a protective mechanism to avoid vulnerability...
 python merge_results.py
 ```
 
-### 코사인 유사도 분석
+### 코사인 유사도 분석 (최종 모델 선정 기준)
+
+**목적**: 파인튜닝 후에도 베이스 모델의 기존 지식이 잘 보존되었는지 평가
 
 ```bash
 # Qwen 임베딩 기반 유사도 계산
 cat cosine_similarity_qwen_embedding.csv
 ```
+
+**분석 방법**:
+1. 동일한 입력에 대해 베이스 모델과 파인튜닝 모델의 출력 생성
+2. 두 출력을 임베딩 벡터로 변환
+3. 코사인 유사도 계산 (범위: 0~1, 1에 가까울수록 유사)
+
+**결과 해석**:
+- **높은 유사도** → 베이스 모델의 HTP 지식 보존 → 신뢰도 높음
+- **낮은 유사도** → 과도한 변화 → Catastrophic Forgetting 우려
+
+**최종 선정**: Layer Freezing 방식이 더 높은 유사도를 보여 최종 모델로 선택
 
 ---
 
@@ -446,17 +527,6 @@ tokenizer.pad_token = tokenizer.eos_token
 - [x] RAG 시스템 통합
 - [x] 멀티턴 대화 시스템
 
-### 🚧 진행 중
-- [ ] 웹 인터페이스 개발 (Gradio/Streamlit)
-- [ ] 더 큰 모델로 확장 (Qwen2.5-7B)
-- [ ] 다국어 지원 (한국어 추가)
-
-### 🔮 향후 계획
-- [ ] 실시간 그림 분석 API
-- [ ] 모바일 앱 통합
-- [ ] 전문가 검증 시스템
-- [ ] 추가 심리검사 지원 (MBTI, MMPI 등)
-
 ---
 
 ## 📖 참고 자료
@@ -470,10 +540,6 @@ tokenizer.pad_token = tokenizer.eos_token
 - [Qwen2.5 Technical Report](https://huggingface.co/Qwen)
 - [LoRA: Low-Rank Adaptation](https://arxiv.org/abs/2106.09685)
 - [Instruction Tuning](https://arxiv.org/abs/2109.01652)
-
-### 관련 논문
-- "Scaling Instruction-Finetuned Language Models"
-- "Parameter-Efficient Transfer Learning for NLP"
 
 ---
 
